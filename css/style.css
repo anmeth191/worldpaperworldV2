@@ -1,3 +1,41 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.universal-container {
+  display: grid;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end];
+  grid-gap: 2rem; }
+  .universal-container > * {
+    padding: 5rem; }
+  .universal-container .header {
+    background: blue; }
+  .universal-container .showcase {
+    background: red; }
+  .universal-container .story {
+    background: pink; }
+  .universal-container .unique {
+    background: greenyellow; }
+  .universal-container .services {
+    background: rebeccapurple; }
+  .universal-container .span {
+    background: blueviolet; }
+  .universal-container .testimonials {
+    background: olive; }
+  .universal-container .gallery {
+    background: violet; }
+  .universal-container .contactForm {
+    background: teal; }
+  .universal-container .footer {
+    background: hotpink; }
+
 .hello {
   color: black;
   display: block;

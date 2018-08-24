@@ -1,0 +1,31 @@
+//reseting universal styles for the web 
+*,*::before, *::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html{font-size: 62.5%;}
+body{box-sizing: border-box;}
+
+
+.universal-container{
+
+display:grid;
+grid-template-columns: [full-start]1fr  [center-start]repeat(8,[col-start] minmax(min-content , 15rem)[col-end])[center-end] 1fr[full-end];
+grid-gap:2rem;
+//only for fixing purpose
+& > * {padding:5rem;}
+
+.header{background:blue;}
+.showcase{background:red;}
+.story{background:pink;}
+.unique{background:greenyellow;}
+.services{background:rebeccapurple;}
+.span{background:blueviolet;}
+.testimonials{background:olive;}
+.gallery{background:violet;}
+.contactForm{background:teal;}
+.footer{background:hotpink;}
+
+}
