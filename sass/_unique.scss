@@ -1,0 +1,29 @@
+
+  .unique{
+    align-items: center;
+    background:$color-primary;
+    display:grid;
+    grid-column:full-start/full-end; 
+    grid-template-columns: repeat(auto-fit , minmax(25rem , 1fr));
+    grid-gap:2rem;
+    padding:0 1.8rem 1.8rem 1.8rem;
+
+    &__content{ 
+        text-align: center;
+       
+        &--title{ margin-bottom: 2rem; }//end of the title
+    
+        &--content{
+        }
+    }//end of the content
+
+    &__image{
+     
+      &--photo{
+            width:100%;
+            height:55rem;
+            object-fit: cover;
+        }//end of the photo
+    }//end of the content image class
+
+}//end of unique section

@@ -1,0 +1,29 @@
+
+.story{
+    grid-column:full-start/full-end;
+    background:$color-primary;
+    display:grid;
+    grid-template-columns: repeat(auto-fit , minmax(25rem , 1fr));
+    grid-gap:2rem;
+    padding:1.8rem;
+    align-items: center;
+
+    &__content{
+        text-align: center;
+        color:$font-color;
+    
+        &--title{
+            margin-bottom:2rem;
+        }//end of the title
+
+    } //end of the content
+
+    &__image{
+       &--photo{
+            width:100%;
+            height:55rem;
+            object-fit: cover;
+        }//end of the photo
+
+    }//end of the image grid
+}//end of the sory section

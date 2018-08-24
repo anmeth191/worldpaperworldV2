@@ -1,6 +1,9 @@
+@import 'variables';
+@import 'typography';
+@import 'mixins';
 //reseting universal styles for the web 
 *,*::before, *::after{
-    box-sizing: border-box;
+    box-sizing: inherit;
     margin:0;
     padding:0;
 }
@@ -10,22 +13,59 @@ body{box-sizing: border-box;}
 
 
 .universal-container{
-
 display:grid;
-grid-template-columns: [full-start]1fr  [center-start]repeat(8,[col-start] minmax(min-content , 15rem)[col-end])[center-end] 1fr[full-end];
-grid-gap:2rem;
-//only for fixing purpose
-& > * {padding:5rem;}
+//defining columns structure
+grid-template-columns: [full-start] minmax(4rem,1fr)  [center-start]repeat(8,[col-start] minmax(min-content , 15rem)[col-end])[center-end] minmax(4rem,1fr) [full-end];
+//defining rows structure
+grid-template-rows: 8rem 90vh repeat(8 , minmax(min-content , 55rem)); 
+ //grid-auto-rows:8rem  minmax(65rem , auto);
 
-.header{background:blue;}
-.showcase{background:red;}
-.story{background:pink;}
-.unique{background:greenyellow;}
-.services{background:rebeccapurple;}
-.span{background:blueviolet;}
-.testimonials{background:olive;}
-.gallery{background:violet;}
-.contactForm{background:teal;}
-.footer{background:hotpink;}
 
+.testimonials{
+
+    background:olive;
+    grid-column:center-start/center-end;
+}
+
+.gallery{
+    background:violet;
+    grid-column:full-start/full-end;
+
+}
+.contactForm{
+
+    background:teal;
+    grid-column: center-start/center-end;
+}
+
+.footer{background:hotpink;
+        grid-column: full-start/full-end;
+}
+
+}
+
+
+
+.btn{
+    background:$color-primary-dark;
+    text-decoration: none;
+    padding:2.2rem 3.3rem;
+    display: inline-block;
+    margin:2rem auto;
+    color:$font-color;
+    font-size: $font-links;
+    font-family: $content-font;
+}
+
+.icon{
+    color:$font-color;
+    font-size:8.5rem;
+}
+
+/*
+next style is for the images in the span container which defines the height width and object fit in roder to make the photod
+fit inside the grid cells
+*/
+.img_format{
+    @include images_format;
 }

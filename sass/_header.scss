@@ -1,0 +1,43 @@
+@import "variables";
+@import "typography";
+
+.header{
+    grid-column:full-start/full-end;
+    background:$color-primary;
+    height:8rem;
+  
+&__navbar{
+    
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    width:80%;
+    margin:0 auto;
+    height:100%;
+   
+    &--logo{
+
+   align-self: center; 
+  .logo__img{ width:100%;}
+   
+}
+ 
+&--links{
+        align-self: center;
+        justify-self: end;
+      
+        .list{
+            list-style: none;
+            
+            &__ref{
+            
+              text-decoration: none;
+              color:$font-color;
+              font-family: $content-font;
+              font-size: $font-links;
+              &:not(:last-child){padding:0 3rem;}
+            
+            }//end of the a tags
+             }//end of the list 
+              }//end of the ul of the navbar
+               }//end of the navbar 
+                }//end of the header

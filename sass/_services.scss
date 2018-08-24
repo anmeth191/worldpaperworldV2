@@ -1,0 +1,25 @@
+.services{
+   
+    background:$color-primary-dark;
+    grid-column:full-start/full-end;
+    display: grid;
+    grid-template-rows: 8rem 1fr;
+
+    justify-content: center;
+    text-align: center;
+
+     
+    &__title{
+        margin-top: 3rem;
+    }//end of the title
+
+    &__container{
+        display:grid;
+        width:90%;
+        margin: 0 auto;
+        grid-gap:2.5rem; 
+        grid-template-columns: repeat(3 ,minmax(30rem , 1fr));
+        align-self: center;
+        text-align: center;
+    }//end of the container fof the services
+}//end of the services

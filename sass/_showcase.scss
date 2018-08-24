@@ -1,0 +1,22 @@
+.showcase{
+    align-items: center;
+    background-image:url('../assets/images/showcase2.jpeg') ;
+    background-size: cover;
+    background-position:center;        
+    grid-column:full-start/full-end;
+    display:grid;
+    height:90vh;
+    justify-items: center;
+
+    &__content{
+
+        text-align: center;
+
+        &--title{font-size: 5.5rem;}//end of the title
+
+        &--subtitle{font-size: 2rem;}//end of the subtitle
+
+
+    }//end of the showcase content
+
+}//end of the showcase

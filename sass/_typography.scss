@@ -1,0 +1,63 @@
+//font-family 
+
+$heading-font: 'Lora', serif;
+$content-font:'Open Sans', sans-serif;;
+
+//font colors
+$font-color:#ffffff;
+
+
+//font sizes:
+
+$font-links:1.3rem;
+
+
+//font weight
+$font-weight:200;
+
+.title{
+    font-family: $heading-font;
+    color:$font-color;
+    font-weight:$font-weight;
+    
+}
+
+.subtitle{
+    font-family: $content-font;
+    color:$font-color;
+     font-weight:$font-weight;
+}
+
+.content{
+    font-family: $content-font;
+}
+
+
+.heading-1{
+font-size:4.5rem;
+letter-spacing: 2px;
+}
+
+
+.heading-2{
+    font-size:4rem;
+    letter-spacing: 2px;
+    }
+
+    
+.heading-3{
+    font-size:3rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    }
+
+    
+.heading-4{
+    font-size:2rem;
+    letter-spacing: 2px;
+    }
+
+ .content{
+     font-size: 1.4rem;
+     color:$font-color;
+ }   
